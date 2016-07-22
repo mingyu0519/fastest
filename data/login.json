@@ -1,0 +1,24 @@
+{
+    "test_login": {
+        "url": "sso/login",
+        "method": "post",
+        "request": {
+            "username": "18522654434",
+            "password": "123456"
+        },
+        "check": {
+            "resultCode": 0
+        }
+    },
+    "test_login_password_error": {
+        "url": "sso/login",
+        "method": "post",
+        "request": {
+            "username": "18522654434",
+            "password": "234432"
+        },
+        "check": {
+            "resultCode": 1
+        }
+    }
+}
